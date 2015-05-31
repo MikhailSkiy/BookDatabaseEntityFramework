@@ -10,7 +10,7 @@ namespace BookDatabaseEntityFramework.similarity
     {
         // Возвращает матрицу коэффициентов подобия. Для user - oriented представляет собой
         // Подобие между пользователями, а для item - oriented  матрицу подобия между элементами
-          double[][] getSimilarityMatrix();
+          double[,] getSimilarityMatrix();
 
         /// <summary>
         /// Возвращает меру подобия между двумя объектами по их ID
@@ -20,17 +20,17 @@ namespace BookDatabaseEntityFramework.similarity
         /// <returns>
         /// Значение типа double - значение подобия
         /// </returns>
-        abstract double getValue(int idX, int idY);
+        double getValue(int idX, int idY);
 
         /// <summary>
         /// Id матрицы похожести
         /// </summary>
         /// <returns></returns>
-        public abstract String getId();
+         String getId();
 
-        public abstract RatingCountMatrix getRatingCountMatrix(int idX, int idY);
-        public abstract bool IsRatingCountMatrixAvailable();
-        public void print();
+         RatingCountMatrix getRatingCountMatrix(int idX, int idY);
+        bool isRatingCountMatrixAvailable();
+        void print();
 
     }
 }

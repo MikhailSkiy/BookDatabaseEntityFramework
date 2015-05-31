@@ -251,13 +251,13 @@ namespace BookDatabaseEntityFramework.recommender
         //}
 
         //WTF!!!!!!!!!!!
-        public ISimilarityMatrix getSimilarityMatrix(){
-            return similarityMatrix;
-        }
+        //public ISimilarityMatrix getSimilarityMatrix(){
+        //    return similarityMatrix;
+        //}
 
-        public bool isVerbose() {
-        return verbose;
-        }
+        //public bool isVerbose() {
+        //return verbose;
+        //}
 
        public void setVerbose(bool verbose) {
         this.verbose = verbose;

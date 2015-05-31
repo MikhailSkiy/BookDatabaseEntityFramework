@@ -31,6 +31,7 @@ namespace BookDatabaseEntityFramework.similarity
            return this.id;
        }
 
+
        public double[,]getSimilarityMatrix(){
            return similarityValues;
        }
@@ -46,7 +47,7 @@ namespace BookDatabaseEntityFramework.similarity
            return keepRatingCountMatrix;
        }
 
-       public abstract void calculate(BookData data);
+       protected abstract void calculate(BookData data);
 
        public double getValue(int idX, int idY){
            if (similarityValues == null){

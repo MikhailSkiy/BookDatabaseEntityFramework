@@ -30,20 +30,20 @@ namespace BookDatabaseEntityFramework.similarity
            return load(type, data, keepRatingCountMatrix);
        }
 
-       public ISimilarityMatrix load(RecommendationType type, BookData data, bool keepRatingMatrix)
+       public ISimilarityMatrix load(RecommendationType type, BookData data, bool keepRatingCountMatrix)
        {
            ISimilarityMatrix m = null;
 
            switch (type)
            {
                case RecommendationType.ITEM_BASED:
-                   m = new ItemBasedSimilarity(data, keepRatingMatrix);
+                   m = new ItemBasedSimilarity(data, keepRatingCountMatrix);
                    break;
                case RecommendationType.ITEM_PENALTY_BASED:
                   // m = new ItemPenaltyBasedSimilarity(IDictionary, data, keepRatingMatrix);
                    break;
                case RecommendationType.USER_BASED:
-                  // m = new UserBasedSimilarity(id, data, keepRatingCountMatrix);
+                   m = new UserBasedSimilarity(data, keepRatingCountMatrix);
                    break;
                case RecommendationType.IMPROVED_USER_BASED:
                   // m = new ImprovedUserBasedSimilarity(id, data, keepRatingCountMatrix);
@@ -55,10 +55,17 @@ namespace BookDatabaseEntityFramework.similarity
                   // m = new ItemContentBasedSimilarity(id, data);
                    break;
                case RecommendationType.USER_ITEM_CONTENT_BASED:
-                   m = new UserItemContentBasedSimilarity(id, data);
+                  // m = new UserItemContentBasedSimilarity(id, data);
                    break;
                default: break;
            }
+
+           if (cache != null)
+           {
+              
+           }
+
+           return m;
        }
     }
 }

@@ -220,7 +220,10 @@ namespace BookDatabaseEntityFramework
   * false if user or items ids can be treated as sequences that start with 1. 
   * In this case index will be derived from id: index = id - 1.
   */
-        public bool isIdMappingRequired();
+        public bool isIdMappingRequired()
+        {
+            return true;
+        }
 
 
 

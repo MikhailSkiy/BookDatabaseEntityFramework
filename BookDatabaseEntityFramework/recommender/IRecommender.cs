@@ -14,31 +14,31 @@ namespace BookDatabaseEntityFramework.recommender
         /// </summary>
         /// <param name="user">GeneralUser</param>
         /// <returns>Рекомендуемые элементы с предсказанным рейтингом</returns>
-        public List<PredictedItemRating> recommend(GeneralUser user);
+        List<PredictedItemRating> recommend(BookUser user);
 
           /// <summary>
         /// Возвращает N самых "точных" (т.е. большим по показателям) рекомендаций
         /// </summary>
         /// <param name="user">GeneralUser</param>
         /// <returns>Рекомендуемые элементы с предсказанным рейтингом</returns>
-        public List<PredictedItemRating> recommend(User user, int topN);
+        List<PredictedItemRating> recommend(BookUser user, int topN);
 
-        public double predictRating(User user, BookItem item);
+        double predictRating(BookUser user, BookItem item);
 
-        public SimilarUser[] findSimilarUsers(User user);
+        List<SimilarUser> findSimilarUsers(BookUser user);
 
-        public SimilarUser[] findSimilarUsers(User user, int topN);
+        List<SimilarUser> findSimilarUsers(BookUser user, int topN);
 
        // public SimilarItem[] findSimilarItems(Item item);
 
     //    public SimilarItem[] findSimilarItems(Item item, int topN);
 
         // WTF???
-        public BookData getData();
+         BookData getDataset();
 
-        public double getSimilarityThreshold();
+         double getSimilarityThreshold();
 
-        public void setSimilarityThreshold(double similarityThreshold);
+         void setSimilarityThreshold(double similarityThreshold);
 
     }
 }

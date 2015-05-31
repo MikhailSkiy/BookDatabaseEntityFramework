@@ -92,6 +92,7 @@
     <Compile Include="similarity\ISimilarityMatrix.cs" />
     <Compile Include="similarity\SimilarityMatrixCache.cs" />
     <Compile Include="similarity\SimilarityMatrixRepository.cs" />
+    <Compile Include="similarity\UserBasedSimilarity.cs" />
     <Compile Include="sysdiagram.cs">
       <DependentUpon>BookModel.tt</DependentUpon>
     </Compile>

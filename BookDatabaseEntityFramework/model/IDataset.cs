@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace BookDatabaseEntityFramework.model
 {
-    class IDataset
+    public interface IDataset
     {
         // Полное количество рейтингов элементов
-        public int getRatingsCount();
+        int getRatingsCount();
 
         // Полное количество доступных пользователей
-        public int getUserCount();
+        int getUserCount();
 
         // Полное количество доступных элементов
-        public int getItemCount();
+       int getItemCount();
 
         // Получает количество всех пользователей 
-        public List<User> getUsers();
+        List<User> getUsers();
 
         // Получает количество всех элементов
-        public List<Book> getItems();
+        List<Book> getItems();
     }
 }

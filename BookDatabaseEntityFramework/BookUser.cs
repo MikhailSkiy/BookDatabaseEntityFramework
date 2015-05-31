@@ -8,7 +8,7 @@ using BookDatabaseEntityFramework.model;
 namespace BookDatabaseEntityFramework
 {
     // Класс, обозначающий пользователя интернет-магазина книг
-    class BookUser : GeneralUser
+   public class BookUser : GeneralUser
     {
         public BookUser(int id, string location, int age, List<GeneralRating> ratings)
             :base(id,location,age,ratings) {}

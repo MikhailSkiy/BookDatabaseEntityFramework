@@ -1,2 +1,8 @@
 c:\users\mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\bin\Debug\BookDatabaseEntityFramework.exe.config
 C:\Users\Mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\obj\Debug\BookDatabaseEntityFramework.csprojResolveAssemblyReference.cache
+C:\Users\Mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\bin\Debug\BookDatabaseEntityFramework.exe
+C:\Users\Mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\bin\Debug\BookDatabaseEntityFramework.pdb
+C:\Users\Mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\Mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\Mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\obj\Debug\BookDatabaseEntityFramework.exe
+C:\Users\Mikhail\documents\visual studio 2013\Projects\BookDatabaseEntityFramework\BookDatabaseEntityFramework\obj\Debug\BookDatabaseEntityFramework.pdb

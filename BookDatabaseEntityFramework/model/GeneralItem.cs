@@ -13,18 +13,20 @@ namespace BookDatabaseEntityFramework.model
         private string Name;
         
         // Все рейтинги для заданного элемента. 
+        // Каждый пользователь может оценить предмет только один раз
         // userId -> rating
         private Dictionary<int, GeneralRating> ratingByUserId;
         public GeneralItem(int id, List<GeneralRating> ratings)
         {
-            this.Id = id;
-            this.Name = id.ToString();
-            ratingByUserId = new Dictionary<int, GeneralRating>(ratings.Count);
+            //this.Id = id;
+            //this.Name = id.ToString();
+            //ratingByUserId = new Dictionary<int, GeneralRating>(ratings.Count);
 
-            for (int i = 0; i < ratings.Count; i++)
-            {
-                ratingByUserId.Add(ratings[i].getItemId(), ratings[i]);
-            }
+            //for (int i = 0; i < ratings.Count; i++)
+            //{
+            //    ratingByUserId.Add(ratings[i].getItemId(), ratings[i]);
+            //}
+            new GeneralItem(id, id.ToString(), ratings);
         }
 
         public GeneralItem(int id, string name, List<GeneralRating> ratings)

@@ -23,7 +23,7 @@ namespace BookDatabaseEntityFramework.similarity
             calculate(dataSet);
         }
 
-        public void calculate(BookData dataset)
+        protected override void calculate(BookData dataset)
         {
             int nItems = dataset.getBookCount();
             int nRatingValues = 5; // ИЛИ 6

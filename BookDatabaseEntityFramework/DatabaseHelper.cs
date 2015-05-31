@@ -28,8 +28,9 @@ namespace BookDatabaseEntityFramework
              List<Rating> ratings = getRatingsFromDatabase ();
              for (int i = 0; i < ratings.Count; i++)
              {
+                 var userId = ratings[i].UserId;
                  var query = from allRatings in db.Ratings
-                             where allRatings.UserId == ratings[i].UserId
+                             where allRatings.UserId == userId
                              select allRatings.User;
                  users.Add(query.First<User>());
              }

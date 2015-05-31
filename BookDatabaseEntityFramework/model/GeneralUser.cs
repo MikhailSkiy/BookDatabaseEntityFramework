@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookDatabaseEntityFramework.model
 {
-    class GeneralUser
+   public class GeneralUser
     {
         public int UserId { get; set; }
        public string Location { get; set; }
